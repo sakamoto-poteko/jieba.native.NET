@@ -1,3 +1,0 @@
-[submodule "libjieba-c"]
-	path = libjieba-c
-	url = git@github.com:sakamoto-poteko/libjieba-c.git

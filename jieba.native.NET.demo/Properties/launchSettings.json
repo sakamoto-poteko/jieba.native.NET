@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "jieba.native.NET.demo": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
