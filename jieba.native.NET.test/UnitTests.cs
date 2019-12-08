@@ -19,8 +19,19 @@ namespace jieba.native.NET.test
             Jieba = new Jieba(DICT_PATH, HMM_PATH, USER_DICT, IDF_PATH, STOP_WORDS_PATH);
         }
 
+        ~JiebaFixture()
+        {
+            Dispose(false);
+        }
+
+        protected virtual void Dispose(bool d)
+        {
+        }
+
         public void Dispose()
         {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 

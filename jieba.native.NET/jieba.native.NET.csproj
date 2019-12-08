@@ -2,6 +2,32 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>5.0.1-alpha2</Version>
+    <Authors>Poteko Sakamoto</Authors>
+    <Company />
+    <Product />
+    <Copyright>Poteko Sakamoto</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/sakamoto-poteko/jieba.native.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sakamoto-poteko/jieba.native.NET</RepositoryUrl>
   </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Content Include="runtimes\**" Exclude="runtimes\.gitignore" Pack="true" PackagePath="runtimes" Visible="false">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="libjieba-c" Version="5.0.1-rc1" />
+  </ItemGroup>
 
 </Project>
